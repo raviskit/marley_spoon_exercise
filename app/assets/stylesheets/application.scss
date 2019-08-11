@@ -10,6 +10,34 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
- *= require_tree .
- *= require_self
  */
+@import "bootstrap";
+@import "recipes";
+
+.navbar {
+  min-height: 20px;
+  background: #47d7ac;
+}
+
+.navbar-brand {
+  padding:  0 20px;
+  height: 60px;
+  line-height: 60px;
+}
+
+@media (min-width: 768px) {
+  .navbar-nav > li > a {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    line-height: 20px;
+  }
+}
+
+footer{
+  margin-top: 80px;
+  background: black;
+}
+
+.footer-copyright{
+  color: white;
+}

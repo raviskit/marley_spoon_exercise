@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="container-fluid">
+    <div class="recipe-index">
+      <div class="jumbotron text-center"><h1><b>Recipes</b></h1></div>
+      <div class="row">
+        <% @recipes.each do |recipe| %>
+          <div class="col-md-6">
+            <a href="<%= "/recipes/#{recipe.id}" %>">
+              <div class="card recipe-card">
+                <img class="card-img-top" src="<%= recipe.photo.url %>" alt="recipe image">
+                <div class="card-body text-center">
+                  <h4 class="card-title"><%= recipe.title %></h4>
+                </div>
+              </div>
+            </a>
+          </div>
+        <% end %>
+      </div>
+    </div>
+
+  </div>
+</div>

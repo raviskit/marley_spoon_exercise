@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="container-fluid">
+    <div class="recipe-show">
+      <div class="row">
+        <p>
+          <%= link_to 'Back', recipes_path, class: 'btn btn-primary' %>
+        </p>
+
+      </div>
+      <div class="row">
+        <div class="card recipe-details-card">
+          <h4 class="card-title text-center"><b><%= @recipe.title %></b></h4>
+          <img class="card-img-top" src="<%= @recipe.photo.url %>" alt="recipe image">
+          <div class="card-body text-center">
+            <% if @recipe.tags %>
+              <% @recipe.tags.each do |tag| %>
+                <span class="badge badge-primary"><%= tag.name %></span>
+              <% end %>
+            <% end %>
+            <p class="card-text"><%= @recipe.description%></p>
+            <% if @recipe.chef %>
+              <p class="text-left"><h4>Recipe By: <%= @recipe.chef.name %></h4></p>
+            <% end %>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
