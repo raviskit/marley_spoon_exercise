@@ -3,8 +3,7 @@
 ## Configuration
 Built using 
 
-Rails 5.2.3
-Ruby 2.5.0
+`Rails 5.2.3   &    Ruby 2.5.0`
 
 ## Setup the application
 1. Clone this repo in your local by running 
